@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, intial-scale=200">
+        <style>
+            .calc_container{
+                display: flex;
+                flex-direction: column;   
+                /* /if it is row buttons arrange in row wise/ */
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                width: 350px;
+                border:2px solid darkgrey;
+            }
+            button.cal_num_btn{
+                padding: 12px;
+                width: 80px;
+                margin:8px;
+                border: 1px solid darkgrey;
+                background-color: dodgerblue;
+                color: white;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            .cal_display_input{
+                width: 257px;
+                padding: 10px;
+                background-color: lightgreen;
+                text-align: right;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
+        <script src="calculator.js" defer></script>
+     </head>
+     <body>
+        <div class="calc_container">
+    <div>
+        <input class="cal_display_input" id="cal_display_input" value="0"/>
+    </div>
+    <div>
+        <button class="cal_num_btn" id="1_btn">1</button>
+        <button class="cal_num_btn" id="2_btn">2</button>
+        <button class="cal_num_btn" id="3_btn">3</button>
+    </div>
+    <div>
+        <button class="cal_num_btn" id="4_btn">4</button>
+        <button class="cal_num_btn" id="5_btn">5</button>
+        <button class="cal_num_btn" id="6_btn">6</button>
+    </div>
+    <div>
+        <button class="cal_num_btn" id="7_btn">7</button>
+        <button class="cal_num_btn" id="8_btn">8</button>
+        <button class="cal_num_btn" id="9_btn">9</button>
+    </div>
+        <button  class="cal_num_btn" id="0_btn">0</button>
+    </div>  
+    </body>
+</html>
